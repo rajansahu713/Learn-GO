@@ -58,7 +58,7 @@ var student2 = "Jane" //type is inferred
 x := 2 //type is inferred
 ```
 
-whenever you declear a variable in golang you will a default value to it.
+Whenever you declare a variable without assigning a value, it will be assigned a default value based on its type. 
 ```go
 var a string
 var b int
@@ -110,3 +110,41 @@ Go has three basic data types:
 bool: represents a boolean value and is either true or false
 Numeric: represents integer types, floating point values, and complex types
 string: represents a string value
+
+
+### Rule of variable declaration in go
+1. Variable names must start with a letter or an underscore.
+2. Variable names can only contain letters, numbers, and underscores.
+3. Variable names cannot be a reserved keyword in Go.
+4. if a variable is declared but not used, the compiler will throw an error. This is to encourage clean and efficient code.
+
+### different between var and const
+1. var is used to declare a variable that can be changed, while const is used to declare a constant that cannot be changed.
+2. var can be assigned a value at runtime, while const must be assigned a value at compile time.
+3. var can be used to declare variables of any type, while const can only be used to declare constants of basic types (such as int, float, string, etc.).
+
+### different between array and slice
+1. An array is a fixed-size collection of elements of the same type, while a slice is a dynamically-sized, flexible view into the elements of an array.
+2. An array has a fixed length that is determined at compile time, while a slice can grow and shrink dynamically as elements are added or removed.
+
+Declaration of array
+```go
+var arr [5]int // declares an array of 5 integers
+```
+
+Declaration of slice
+```go
+var s []int // declares a slice of integers
+```
+
+
+## map in go
+A map is a collection of key-value pairs, where each key is unique and maps to a single value. Maps are also known as hash tables or dictionaries in other programming languages.
+
+Declaration of map
+```go
+var m map[string]int // declares a map with string keys and int values
+```
+
+if you try to search for a key that does not exist in the map
+

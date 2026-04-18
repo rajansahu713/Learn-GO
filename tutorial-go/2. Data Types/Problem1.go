@@ -1,15 +1,9 @@
+// adding two numbers 
 package main
 
 import (
 	"fmt"
 )
-
-func add_values(a int, b int) int {
-
-	var c = a + b
-
-	return c
-}
 
 func main() {
 
@@ -26,7 +20,7 @@ func main() {
 	fmt.Scan(&b)
 	fmt.Println(b)
 
-	c = add_values(a, b)
+	c = a + b
 
 	fmt.Printf("Sum: %d \n", c)
 
